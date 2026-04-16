@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/mybookings.css">
+	<title>My Bookings - CustomerHub</title>
+	<script src="https://kit.fontawesome.com/7a6c6b42a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-heart-circle'></i>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="home.html">
+					<i class='bx bxs-home' ></i>
+					<span class="text">Home</span>
+				</a>
+			</li>
+			<li>
+				<a href="notification.html">
+					<i class='bx bxs-bell' ></i>
+					<span class="text">Notification</span>
+				</a>
+			</li>
+            <li>
+				<a href="aboutus.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">About Us</span>
+				</a>
+			</li>
+			<li>
+				<a href="services.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Services</span>
+				</a>
+			</li>
+			<li>
+				<a href="portfolio.html">
+					<i class='bx bxs-star' ></i>
+					<span class="text">Portfolio</span>
+				</a>
+			</li>
+			<li>
+				<a href="contact.html">
+					<i class='bx bxs-phone' ></i>
+					<span class="text">Contact Us</span>
+				</a>
+			</li>
+			<li>
+				<a href="reviews.html">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">Reviews</span>
+				</a>
+			</li>
+			<li id="account-li">
+				<a href="account.html" class="has-dropdown">
+					<i class='bx bxs-user-circle' ></i>
+					<span class="text">Account</span>
+					<i class='bx bx-chevron-down dropdown-icon'></i>
+				</a>
+				<ul class="drop-menu">
+					<li>
+						<a href="account.html">
+							<i class='bx bxs-user' ></i>
+							<span class="text">Profile</span>
+						</a>
+					</li>
+					<li>
+						<a href="mybookings.html">
+							<i class='bx bxs-calendar-check' ></i>
+							<span class="text">My Bookings</span>
+						</a>
+					</li>
+					<li>
+						<a href="myreviews.html">
+							<i class='bx bxs-cog' ></i>
+							<span class="text">My Reviews</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="../admin/logout.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+		<!-- SIDEBAR -->
+
+		<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">My Account</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search bookings...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<a href="appointment.html" class="appointment-btn">
+				<i class='bx bx-calendar-plus'></i>
+				<span>Book Now</span>
+			</a>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="support.html" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">3</span>
+			</a>
+			<a href="profile.html" class="profile">
+				<img src="img/profile-image.jpg">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<main>
+			<div class="content-section" id="schedule">
+                <div class="section-header">
+                    <h2>My Bookings</h2>
+                </div>
+
+                <!-- MyBookings Filters -->
+                <div class="mybooking-filters">
+                    <button class="filter-btn active" data-filter="confirmed">Confirmed</button>
+                    <button class="filter-btn" data-filter="pending">Pending</button>
+                    <button class="filter-btn" data-filter="history">History</button>
+                </div>
+
+                <!-- MyBookings Container -->
+                <div class="mybookings-container">
+                    
+                    <!-- Confirmed Bookings Section -->
+                    <div class="booking-section" data-type="confirmed">
+                        <h3 class="section-title">Confirmed Bookings</h3>
+                        
+                        <div class="booking-item" data-type="confirmed">
+                            <div class="booking-icon confirmed">
+                                <i class='bx bx-calendar-check'></i>
+                            </div>
+                            <div class="booking-content">
+                                <h4>Haircut & Treatment</h4>
+                                <p>Tomorrow at 2:00 PM - 3:30 PM with Sarah Johnson</p>
+                                <div class="booking-status confirmed">Confirmed</div>
+                                <span class="booking-time">Tomorrow, 2:00 PM</span>
+                            </div>
+                            <div class="booking-actions">
+                                <a href="#" class="btn-view">View</a>
+                                <button class="btn-cancel">Cancel</button>
+                            </div>
+                        </div>
+
+                        <div class="booking-item" data-type="confirmed">
+                            <div class="booking-icon confirmed">
+                                <i class='bx bx-calendar-check'></i>
+                            </div>
+                            <div class="booking-content">
+                                <h4>Manicure Service</h4>
+                                <p>Friday at 4:00 PM - 5:00 PM with Lisa Chen</p>
+                                <div class="booking-status confirmed">Confirmed</div>
+                                <span class="booking-time">Fri, 4:00 PM</span>
+                            </div>
+                            <div class="booking-actions">
+                                <a href="#" class="btn-view">View</a>
+                                <button class="btn-cancel">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pending Bookings Section -->
+                    <div class="booking-section" data-type="pending">
+                        <h3 class="section-title">Pending Bookings</h3>
+                        
+                        <div class="booking-item" data-type="pending">
+                            <div class="booking-icon pending">
+                                <i class='bx bx-calendar-clock'></i>
+                            </div>
+                            <div class="booking-content">
+                                <h4>Facial Treatment</h4>
+                                <p>Requested for Saturday at 10:00 AM - 11:30 AM</p>
+                                <div class="booking-status pending">Pending Approval</div>
+                                <span class="booking-time">Sat, 10:00 AM</span>
+                            </div>
+                            <div class="booking-actions">
+                                <button class="btn-cancel">Cancel Request</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- History Bookings Section -->
+                    <div class="booking-section" data-type="history">
+                        <h3 class="section-title">Booking History</h3>
+                        
+                        <div class="booking-item" data-type="history">
+                            <div class="booking-icon completed">
+                                <i class='bx bx-check-circle'></i>
+                            </div>
+                            <div class="booking-content">
+                                <h4>Full Body Massage</h4>
+                                <p>Completed on Monday at 3:00 PM with Mark Davis</p>
+                                <div class="booking-status completed">Completed</div>
+                                <span class="booking-time">Mon, 3:00 PM</span>
+                            </div>
+                            <div class="booking-actions">
+                                <a href="myreviews.html" class="btn-review">Review</a>
+                                <a href="#" class="btn-rebook">Rebook</a>
+                            </div>
+                        </div>
+
+                        <div class="booking-item" data-type="history">
+                            <div class="booking-icon cancelled">
+                                <i class='bx bx-x-circle'></i>
+                            </div>
+                            <div class="booking-content">
+                                <h4>Nail Art Design</h4>
+                                <p>Cancelled on last week by customer</p>
+                                <div class="booking-status cancelled">Cancelled</div>
+                                <span class="booking-time">Last week</span>
+                            </div>
+                            <div class="booking-actions">
+                                <a href="#" class="btn-rebook">Rebook</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Empty State -->
+                <div class="empty-state" id="emptyBookingsState">
+                    <i class='bx bx-calendar-x'></i>
+                    <h3>No Bookings Found</h3>
+                    <p>You don't have any bookings matching this filter. <a href="appointment.html">Book now!</a></p>
+                </div>
+            </div>
+		</main>
+	</section>
+	<!-- CONTENT -->
+	
+        <script>
+            // MyBookings Filter functionality
+            document.addEventListener('DOMContentLoaded', function() {
+                const filterBtns = document.querySelectorAll('.mybooking-filters .filter-btn');
+                const bookingSections = document.querySelectorAll('.booking-section');
+                const emptyState = document.getElementById('emptyBookingsState');
+                const mybookingsContainer = document.querySelector('.mybookings-container');
+
+                // Filter click handler
+                filterBtns.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        // Update active button
+                        filterBtns.forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        
+                        const filter = btn.dataset.filter;
+                        
+                        // Filter sections
+                        let visibleCount = 0;
+                        bookingSections.forEach(section => {
+                            if (section.dataset.type === filter) {
+                                section.classList.remove('hidden');
+                                section.classList.add('visible');
+                                visibleCount++;
+                            } else {
+                                section.classList.remove('visible');
+                                section.classList.add('hidden');
+                            }
+                        });
+                        
+                        // Show/hide empty state
+                        if (visibleCount === 0) {
+                            emptyState.style.display = 'block';
+                            mybookingsContainer.style.display = 'none';
+                        } else {
+                            emptyState.style.display = 'none';
+                            mybookingsContainer.style.display = 'flex';
+                        }
+                    });
+                });
+
+                // Initial filter (Confirmed active, show confirmed items)
+                filterBtns[0].click();
+
+                // Cancel button handlers (demo)
+                document.querySelectorAll('.btn-cancel').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        if (confirm('Cancel this booking?')) {
+                            btn.closest('.booking-item').remove();
+                            checkEmptyState();
+                        }
+                    });
+                });
+            });
+
+            function checkEmptyState() {
+                const visibleSections = document.querySelectorAll('.booking-section.visible');
+                const emptyState = document.getElementById('emptyBookingsState');
+                const mybookingsContainer = document.querySelector('.mybookings-container');
+                
+                if (visibleSections.length === 0) {
+                    emptyState.style.display = 'block';
+                    mybookingsContainer.style.display = 'none';
+                }
+            }
+        </script>
+	
+	<script src="js/script.js"></script>
+</body>
+</html>
+
